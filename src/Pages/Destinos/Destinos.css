@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+/*Zerando os espaçamentos da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Editando o cabeçalho*/
+
+body {
+    background-color: rgb(238, 186, 42);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 7px;
+    font-size: 20pt;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+.menu {
+    margin: auto 15px;
+    font-size: 20pt;
+}
+
+.menu a {
+    padding: 20px;
+}
+/*Edicação do conteúdo principal de destino*/
+
+.container-destino {
+    /*border: 1px solid;*/
+    max-width: 900px;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.dest-viagem {
+    /*border: 1px solid;*/
+    margin: 10px;
+    padding: 10px;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.144);
+    background-color: rgba(224, 210, 210, 0.486);
+}
+
+.div-img-flor {
+    max-width: 200px;
+    margin: 2px auto;
+}
+
+.div-img-flor img {
+    width: 100%;
+}
+
+.dest-viagem h4 {
+    margin-top: 10px;
+    font-family: 'Rufina', serif;
+}
+
+.dest-viagem p {
+    margin-top: 10px;
+    font-family: 'Rufina', serif;
+}
+
+.valor-destino, .valor-destino a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/*Edição footer*/
+.rodape {
+    text-align: center;
+}
+
+.rodape div {
+    margin: 50px;
+}
+
+/*Redimensionamento*/
+
+@media (max-width: 750px) {
+    .container-destino {
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .container-destino {
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}

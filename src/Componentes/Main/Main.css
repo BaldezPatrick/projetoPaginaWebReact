@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+.container {
+    position: relative;
+    max-width: 900px;
+    margin: 10px auto;
+}
+
+#sec-principal {
+    max-width: 300px;
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    margin: 10px;
+    font-family: 'Josefin Slab', serif;
+    font-size: 20pt;
+}
+
+#sec-principal p {
+    margin-top: 10px;   
+}
+
+#saibaMais-main {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .4);
+    margin: 10px;
+    max-width: 150px;
+    height: 40px;
+    font-size: 16pt;
+    background-color: black;
+    color: white;
+}
+
+#saibaMais-main p {
+    padding: 10px 20px;
+}
+
+#saibaMais-main a {
+    color: white;
+}
+
+#imagem-cidade {
+    max-width: 400px;
+    margin: 10px;
+}
+
+#imagem-cidade img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 2px 5px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 865px) {
+    #imagem-cidade {
+        margin: 10px auto;
+    }
+
+    #sec-principal {
+        right: 250px;
+        top: 50px;
+        background-color: rgba(248, 233, 233, 0.4);
+    }
+
+    #saibaMais-main {
+        background-color: white;
+    }
+
+    #saibaMais-main a {
+        color: black;
+        font-weight: bolder;
+    }
+}
+
+@media (max-width: 728px) {
+    #sec-principal {
+        right: 150px;
+    }
+}
+
+@media (max-width: 510px) {
+    #sec-principal {
+        font-size: 18pt;
+        right: 100px;
+        top: 40px;
+    }
+}

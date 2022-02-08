@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+
+/*Zerando os espaçamentos da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Editando o cabeçalho*/
+
+body {
+    background-color: rgb(238, 186, 42);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 7px;
+    font-size: 20pt;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+.menu {
+    margin: auto 15px;
+    font-size: 20pt;
+}
+
+.menu a {
+    padding: 20px;
+}
+

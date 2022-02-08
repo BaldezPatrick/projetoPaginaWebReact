@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+/*Zerando os espaçamentos da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Editando o cabeçalho*/
+
+body {
+    background-color: rgb(238, 186, 42);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 7px;
+    font-size: 20pt;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+.menu {
+    margin: auto 15px;
+    font-size: 20pt;
+}
+
+.menu a {
+    padding: 20px;
+}
+
+/*Edição principal container promoção*/
+
+.container-promo {
+    /*border: 1px solid;*/
+    margin: 10px auto;
+    max-width: 90%;
+}
+
+#chamada-promo {
+    /*border: 1px solid;*/
+    max-width: 470px;
+    margin: 10px;
+}
+
+#chamada-promo h2 {
+    font-size: 40pt;
+}
+
+#chamada-promo p {
+    margin-top: 10px;
+    font-size: 15pt;
+}
+
+#viagem-promo {
+    /*border: 1px solid;*/
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    justify-content: center;
+    padding: 10px;
+}
+
+#img-promo {
+    /*border: 1px solid;*/
+    max-width: 300px;
+    position: relative;
+}
+
+#img-promo img {
+    border-radius: 5px;
+}
+
+#txt-promo {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Rufina';
+}
+
+#txt-promo p {
+    padding-top: 6px;
+}
+
+.compra-promo {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.compra-promo a {
+    color: white;
+}
+
+
+/*Edição footer*/
+.rodape {
+    text-align: center;
+}
+
+.rodape div {
+    margin: 50px;
+}
+
+/*Redimensionamento*/
+
+@media (max-width: 870px) {
+    #viagem-promo {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (max-width: 570px) {
+    #viagem-promo {
+        grid-template-columns: auto;
+    }
+}

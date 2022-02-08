@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rufina&display=swap');
+
+/*Zerando os espaçamentos da página*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Editando o cabeçalho*/
+
+body {
+    background-color: rgb(238, 186, 42);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    margin: 7px;
+    font-size: 20pt;
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+}
+
+.menu {
+    margin: auto 15px;
+    font-size: 20pt;
+}
+
+.menu a {
+    padding: 20px;
+}
+
+/*Edição container principal*/
+#container-contato {
+    max-width: 90%;
+    margin: 10px auto;
+    /*border: 1px solid;*/
+}
+
+#chamada-contato {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+    /*border: 1px solid;*/
+}
+
+#chamada-contato h3 {
+    margin-top: 7px;
+}
+
+#chamada-contato-b {
+    display: inline-block;
+    font-size: 15pt;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*Edição formulário*/
+#formulario {
+    max-width: 90%;
+    /*border: 1px solid;*/
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Rufina', serif;
+}
+
+#formulario div, input {
+    margin-top: 3px;
+}
+
+input, select, textarea {
+    border-radius: 5px;
+    outline: none;
+    height: 22px;
+    border: 0;
+}
+input:focus {
+    border: 2px solid rgba(112, 112, 218, 0.747);
+}
+
+fieldset {
+    border: 0;
+}
+
+#top-form div {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+#top-form label {
+    display: block;
+}
+
+.campo {
+    /*border: 1px solid;*/
+}
+
+.campo label {
+    display: block;
+}
+
+#btn {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 90px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+}
+
+/*Edição footer*/
+.rodape {
+    text-align: center;
+}
+
+.rodape div {
+    margin: 50px;
+}
+
+/*Redimensionamento*/
+
+@media (max-width: 1060px) {
+    #container-contato {
+        text-align: center;
+    }
+}
